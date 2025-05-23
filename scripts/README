@@ -73,5 +73,29 @@ CREATE TABLE proprietario (
   sg_uf CHAR(2)
 );
 
+📁 Estrutura das Tabelas
+🔹 Exercício 3 - Professor e Aluno
+
+CREATE TABLE professor
+(
+
+id_professor INTEGER,
+nm_professor VARCHAR(50),
+PRIMARY KEY(id_professor)
+
+);
+
+
+CREATE TABLE aluno
+(
+
+id_aluno INTEGER,
+nm_aluno VARCHAR(50),
+id_professor INTEGER,
+PRIMARY KEY(id_aluno),
+FOREIGN KEY(id_professor) REFERENCES professor (id_professor)
+
+);
+
 
 
